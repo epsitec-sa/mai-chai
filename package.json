@@ -1,0 +1,27 @@
+{
+  "name": "mai-chai",
+  "version": "0.0.1",
+  "description": "The chai testing framework, configured with dirty-chai.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epsitec-sa/mai-chai.git"
+  },
+  "author": "Epsitec SA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epsitec-sa/mai-chai/issues"
+  },
+  "homepage": "https://github.com/epsitec-sa/mai-chai#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "dirty-chai": "^1.2.2"
+  },
+  "dependencies": {
+    "chai": "^3.4.0",
+    "dirty-chai": "^1.2.2"
+  }
+}

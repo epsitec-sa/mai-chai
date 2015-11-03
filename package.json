@@ -1,6 +1,6 @@
 {
   "name": "mai-chai",
-  "version": "0.0.1",
+  "version": "0.2.0",
   "description": "The chai testing framework, configured with dirty-chai.",
   "main": "lib/index.js",
   "scripts": {

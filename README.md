@@ -37,3 +37,12 @@ foo.should.be.ok();
 
 or use the various assertions added by [chai-string](http://chaijs.com/plugins/chai-string)
 and spy on methods with [chai-spies](http://chaijs.com/plugins/chai-spies).
+
+## Included plugins
+
+* String assertions are provided by [`chai-string`](https://github.com/onechiporenko/chai-string).
+* ReactElement comparisons are provided by [`chai-equal-jsx`](https://github.com/echenley/chai-equal-jsx).
+
+> See also Algolia's [`react-element-to-jsx-string`](https://github.com/algolia/react-element-to-jsx-string)
+which is used by `chai-equal-jsx` and provides the logic needed to convert a
+`ReactElement` to the corresponding JSX string.

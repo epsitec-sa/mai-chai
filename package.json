@@ -1,6 +1,6 @@
 {
   "name": "mai-chai",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "The chai testing framework, configured by default with chai-spies, chai-string and dirty-chai.",
   "main": "lib/index.js",
   "scripts": {
@@ -18,10 +18,7 @@
   "homepage": "https://github.com/epsitec-sa/mai-chai#readme",
   "devDependencies": {},
   "peerDependencies": {
-    "chai": "^3.4.1",
-    "react": "^0.14.2",
-    "react-addons-test-utils": "^0.14.2",
-    "react-element-to-jsx-string": "^2.1.2"
+    "chai": "^3.4.1"
   },
   "dependencies": {
     "chai-equal-jsx": "^1.0.2",

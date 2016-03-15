@@ -18,9 +18,17 @@ the `./test` folder of the including project:
   `./test/test-helper.js` file in every test.
 * `test-helper.js` &rarr; configures the global `document`, `window` and
   `navigator` objects.
-* `test-require-patch.js` &rarr; utility used to patch `require()`
-  so that `require ('foo')` will map to `require ('./src/index.js')`
-  for project `foo`. 
+  
+And for Wallaby.js users, `mai-chai` comes with a default configuration
+file.
+
+## Conventions
+
+`mai-chai` follows these conventions:
+
+* `./src` &rarr; source code under test.
+* `./test` &rarr; mocha configuration files.
+* `./tests` &rarr; source code for the tests.
 
 ## Installing mai-chai
 
@@ -52,6 +60,12 @@ foo.should.be.ok ();
 
 or use the various assertions added by [chai-string](http://chaijs.com/plugins/chai-string)
 and spy on methods with [chai-spies](http://chaijs.com/plugins/chai-spies).
+
+## Configuring Wallaby.js
+
+`mai-chai` provides a default Wallaby.js configuration file. If you
+stick to the conventions of `mai-chai` no other setup or configuration
+is required. Just point Wallaby.js to `wallaby.conf.js`.
 
 ## Included plugins
 

@@ -25,7 +25,11 @@ if (cwd.endsWith (suffix)) {
   
   files.forEach (function (file) {
     var data = fs.readFileSync (path.join (cwd, 'templates', file));
-    fs.writeFileSync (path.join (test, file), data);
+    if (file.substr (0, 2) === '--') {
+      var name = file.substr (2, file.length - 2); 
+      fs.writeFileSync (path.join (root, name), data);
+    } else {
+      fs.writeFileSync (path.join (test, file), data);
+    }
   });
 }
-

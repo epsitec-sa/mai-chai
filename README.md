@@ -1,22 +1,37 @@
 # mai-chai
-The [chai](http://chaijs.com) testing framework, configured by default
-with following plugins:
+The [chai](http://chaijs.com) testing framework works hand in hand with
+[mocha](https://mochajs.org/). It is configured by default with following
+plugins:
 
+* [chai-equal-jsx](https://github.com/echenley/chai-equal-jsx) &rarr; adds
+  `equalJSX` and `includeJSX` assetions.
 * [chai-spies](http://chaijs.com/plugins/chai-spies) &rarr; adds spy ability.
 * [chai-string](http://chaijs.com/plugins/chai-string) &rarr; help with common
   string comparison assertions.
 * [dirty-chai](https://github.com/prodatakey/dirty-chai) &rarr; provides a
   function-call form for chai _property getter_ assertions.
 
+`mai-chai` also includes configuration files which will be written into
+the `./test` folder of the including project:
+
+* `mocha.opts` &rarr;  registers Babel as the compiler and requires the
+  `./test/test-helper.js` file in every test.
+* `test-helper.js` &rarr; configures the global `document`, `window` and
+  `navigator` objects.
+* `test-require-patch.js` &rarr; utility used to patch `require()`
+  so that `require ('foo')` will map to `require ('./src/index.js')`
+  for project `foo`. 
+
 ## Installing mai-chai
 
-First install the `mai-chai` NPM module.
+First install `mai-chai`:
 
 ```bash
 npm install mai-chai --save-dev
 ```
 
-This will also install `chai`, `chai-spies`, `chai-string` and `dirty-chai`.
+This will also install `mocha`, `chai`, `chai-equal-jsx`, `chai-spies`,
+`chai-string` and `dirty-chai`.
 
 ## Using mai-chai
 
@@ -31,8 +46,8 @@ properties](https://github.com/prodatakey/dirty-chai#function-form-for-terminati
 such as:
 
 ```js
-expect(true).to.be.true();
-foo.should.be.ok();
+expect (true).to.be.true ();
+foo.should.be.ok ();
 ```
 
 or use the various assertions added by [chai-string](http://chaijs.com/plugins/chai-string)
@@ -40,8 +55,8 @@ and spy on methods with [chai-spies](http://chaijs.com/plugins/chai-spies).
 
 ## Included plugins
 
-* String assertions are provided by [`chai-string`](https://github.com/onechiporenko/chai-string).
-* ReactElement comparisons are provided by [`chai-equal-jsx`](https://github.com/echenley/chai-equal-jsx).
+* `String` assertions are provided by [`chai-string`](https://github.com/onechiporenko/chai-string).
+* `ReactElement` comparisons are provided by [`chai-equal-jsx`](https://github.com/echenley/chai-equal-jsx).
 
 > See also Algolia's [`react-element-to-jsx-string`](https://github.com/algolia/react-element-to-jsx-string)
 which is used by `chai-equal-jsx` and provides the logic needed to convert a

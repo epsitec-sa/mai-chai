@@ -22,6 +22,8 @@ if (cwd.endsWith (suffix)) {
   var files = fs.readdirSync (path.join (cwd, 'templates'));
   
   mkdirSync (test);
+  mkdirSync (path.join (root, 'src'));
+  mkdirSync (path.join (root, 'src.test'));
   
   files.forEach (function (file) {
     var data = fs.readFileSync (path.join (cwd, 'templates', file));

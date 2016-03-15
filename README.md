@@ -27,8 +27,8 @@ file.
 `mai-chai` follows these conventions:
 
 * `./src` &rarr; source code under test.
+* `./src.test` &rarr; source code for the tests.
 * `./test` &rarr; mocha configuration files.
-* `./tests` &rarr; source code for the tests.
 
 ## Installing mai-chai
 

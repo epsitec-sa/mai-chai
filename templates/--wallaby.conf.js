@@ -14,7 +14,7 @@ module.exports = function (wallaby) {
       {pattern: 'src/**/*.js'}
     ],
     tests: [
-      {pattern: 'tests/**/*.js'},
+      {pattern: 'src.test/**/*.js'},
     ],
     compilers: {
       '**/*.js*': wallaby.compilers.babel (babelConfig)

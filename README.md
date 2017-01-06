@@ -3,6 +3,8 @@ The [chai](http://chaijs.com) testing framework works hand in hand with
 [mocha](https://mochajs.org/). It is configured by default with following
 plugins:
 
+* [chai-as-promised](https://github.com/domenic/chai-as-promised) &rarr; adds
+  support for asserting promises and async code.
 * [chai-equal-jsx](https://github.com/echenley/chai-equal-jsx) &rarr; adds
   `equalJSX` and `includeJSX` assetions.
 * [chai-spies](http://chaijs.com/plugins/chai-spies) &rarr; adds spy ability.
@@ -18,7 +20,7 @@ the `./test` folder of the including project:
   `./test/test-helper.js` file in every test.
 * `test-helper.js` &rarr; configures the global `document`, `window` and
   `navigator` objects.
-  
+
 And for Wallaby.js users, `mai-chai` comes with a default configuration
 file.
 

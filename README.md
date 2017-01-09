@@ -77,3 +77,9 @@ is required. Just point Wallaby.js to `wallaby.conf.js`.
 > See also Algolia's [`react-element-to-jsx-string`](https://github.com/algolia/react-element-to-jsx-string)
 which is used by `chai-equal-jsx` and provides the logic needed to convert a
 `ReactElement` to the corresponding JSX string.
+
+## Utility functions
+
+* `clock()` &rarr; perf, starts a high resolution timer which can be used to
+  measure performance; it returns an opaque object.
+* `clock(perf)` &rarr; ms, returns the number of milliseconds elapsed.

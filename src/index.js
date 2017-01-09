@@ -1,5 +1,7 @@
 'use strict';
 
+/*****************************************************************************/
+
 var chai = require ('chai');
 var chaiSpies = require ('chai-spies');
 var chaiString = require ('chai-string');
@@ -17,3 +19,9 @@ chai.use (dirtyChai);
 Object.keys (chai).forEach (function (key) {
   module.exports[key] = chai[key];
 });
+
+/*****************************************************************************/
+
+export {clock} from './clock.js';
+
+/*****************************************************************************/

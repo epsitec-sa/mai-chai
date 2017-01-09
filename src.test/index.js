@@ -1,6 +1,9 @@
 'use strict';
 
 import {expect} from '../src/index.js';
+import {clock} from '../src/index.js';
+
+/*****************************************************************************/
 
 describe ('chai-as-promised', () => {
   describe ('Promise...to.eventually.equal()', () => {
@@ -9,3 +12,16 @@ describe ('chai-as-promised', () => {
     });
   });
 });
+
+/*****************************************************************************/
+
+describe ('clock()', () => {
+  it ('measures time', () => {
+    const time = clock ();
+    const ms = clock (time);
+    expect (ms).to.be.at.least (0);
+    expect (ms).to.be.at.most (0.1);
+  });
+});
+
+/*****************************************************************************/

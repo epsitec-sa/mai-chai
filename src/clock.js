@@ -1,7 +1,5 @@
 /* global process */
 
-'use strict';
-
 /*****************************************************************************/
 
 export function clock (start) {

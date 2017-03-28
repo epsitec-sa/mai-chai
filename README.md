@@ -5,6 +5,8 @@ plugins:
 
 * [chai-as-promised](https://github.com/domenic/chai-as-promised) &rarr; adds
   support for asserting promises and async code.
+* [chai-asserttype](https://github.com/GaneshSPatil/chai-asserttype) &rarr; adds
+  support for asserting types.
 * [chai-equal-jsx](https://github.com/echenley/chai-equal-jsx) &rarr; adds
   `equalJSX` and `includeJSX` assetions.
 * [chai-spies](http://chaijs.com/plugins/chai-spies) &rarr; adds spy ability.
@@ -40,8 +42,8 @@ First install `mai-chai`:
 npm install mai-chai --save-dev
 ```
 
-This will also install `mocha`, `chai`, `chai-equal-jsx`, `chai-spies`,
-`chai-string` and `dirty-chai`.
+This will also install `mocha`, `chai`, `chai-as-promised`, `chai-asserttype`,
+`chai-equal-jsx`, `chai-spies`, `chai-string` and `dirty-chai`.
 
 ## Using mai-chai
 

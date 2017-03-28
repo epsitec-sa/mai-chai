@@ -1,6 +1,6 @@
 {
   "name": "mai-chai",
-  "version": "3.3.0",
+  "version": "3.3.1",
   "description": "The chai testing framework paired with mocha. It is configured by default with chai-spies, chai-string and dirty-chai.",
   "main": "lib/index.js",
   "scripts": {
@@ -25,7 +25,8 @@
   "devDependencies": {
     "babel-env": "^1.5.0",
     "generic-js-env": "^1.9.0",
-    "react": "^15.4.2"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "peerDependencies": {},
   "dependencies": {
